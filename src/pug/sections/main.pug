@@ -1,0 +1,62 @@
+main.main.bdr
+	.container
+		label.btn.btn-open(for='nav')
+		input#nav.nav-opener(type='checkbox')
+		.nav
+			.nav-header
+				.nav-title
+				label.btn.btn-nav(for='nav')
+					svg(style='width: 25px; height: 25px' viewbox='0 0 24 24')
+						path(fill='currentColor' d='M19,3H16.3H7.7H5A2,2 0 0,0 3,5V7.7V16.4V19A2,2 0 0,0 5,21H7.7H16.4H19A2,2 0 0,0 21,19V16.3V7.7V5A2,2 0 0,0 19,3M15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4L13.4,12L17,15.6L15.6,17Z')
+					| ЗАКРЫТЬ
+			input#slide1.nav-link-opener(type='radio' name='image' checked='checked')
+			input#slide2.nav-link-opener(type='radio' name='image')
+			input#slide3.nav-link-opener(type='radio' name='image')
+			input#slide4.nav-link-opener(type='radio' name='image')
+			input#slide5.nav-link-opener(type='radio' name='image')
+			input#slide6.nav-link-opener(type='radio' name='image')
+			input#slide7.nav-link-opener(type='radio' name='image')
+			input#slide8.nav-link-opener(type='radio' name='image')
+			input#slide9.nav-link-opener(type='radio' name='image')
+			input#slide10.nav-link-opener(type='radio' name='image')
+			input#slide11.nav-link-opener(type='radio' name='image')
+			ul.nav-links
+				li.nav-link
+					label(for='slide1') О заводе Galmet
+				li.nav-link
+					label(for='slide2') История компании
+				li.nav-link
+					label(for='slide3') Продукция
+				li.nav-link
+					label(for='slide4') Твердотопливные котлы
+				li.nav-link
+					label(for='slide5') Водонагреватели
+				li.nav-link
+					label(for='slide6') Буферные емкости
+				li.nav-link
+					label(for='slide7') Солнечные коллекторы
+				li.nav-link
+					label(for='slide8') Комплекты
+				li.nav-link
+					label(for='slide9') Тепловые насосы
+				li.nav-link
+					label(for='slide10') Наши контакты
+				li.nav-link
+					label(for='slide11') Холдинг FDV-GROUP
+			.nav-images
+				.nav-image.slide-1
+					include ../sections/_about.pug
+				.nav-image.slide-2
+					include ../sections/_history.pug
+				.nav-image.slide-3
+					include ../sections/_products.pug
+				.nav-image.slide-4
+				.nav-image.slide-5
+				.nav-image.slide-6
+				.nav-image.slide-7
+				.nav-image.slide-8
+				.nav-image.slide-9
+				.nav-image.slide-10
+					include ../sections/_contacts.pug
+				.nav-image.slide-11
+					include ../sections/_fdv.pug

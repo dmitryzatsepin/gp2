@@ -1,10 +1,11 @@
 extends template/default
 
 block variables
-	- var title = 'START'
+	- var title = 'GALMET'
 	- var pageClass = 'page_main'
 
 block content
-	include pages/main
+	include blocks/_nav
+	include sections/main
 
 block scripts
